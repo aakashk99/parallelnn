@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#SBATCH -N 1
+#SBATCH -p GPU-shared
+#SBATCH -t 00:20:00
+#SBATCH --gpus=v100-32:1
+
+set -x
+
+cd /jet/home/karlekar/parallelmlp
+./main
